@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ff0000;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2><b>RESTARENT</b></h2>
+</header>
+
+<section>
+  <nav>
+    <ul><h2>BRANCHES</h2>
+      <li><a href="https://recipes.timesofindia.com/recipes/pizza/rs56933159.cms">London</a></li>
+      <li><a href="https://foodfirst.org/support/">Paris</a></li>
+      <li><a href="https://dribbble.com/tags/food_website">Tokyo</a></li>
+    </ul>
+<img src="C:\Users\student.SOC-ITLAB3-30\website\food.jpg" alt="Italian Trulli" width="400" height="100">
+  </nav>
+  
+  <article>
+    <h1>RESTARENT</h1>
+    <p>DevOps brings the human silos together and a DevOps platform does the same thing for tools. Many teams start their DevOps journey with a disparate collection of tools, all of which have to be maintained and many of which don’t or can’t integrate. A DevOps platform brings tools together in a single application for unparalleled collaboration, visibility, and development velocity. A DevOps platform is how modern software should be created, secured, released, and monitored in a repeatable fashion. A true DevOps platform means teams can iterate faster and innovate together because everyone can contribute.
+
+London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+<h1>TYPES OF FOOD IN RESTARENT </h1>
+<p>DevOps brings the human silos together and a DevOps platform does the same thing for tools. Many teams start their DevOps journey with a disparate collection of tools, all of which have to be maintained and many of which don’t or can’t integrate. A DevOps platform brings tools together in a single application for unparalleled collaboration, visibility, and development velocity. A DevOps platform is how modern software should be created, secured, released, and monitored in a repeatable fashion. A true DevOps platform means teams can iterate faster and innovate together because everyone can contribute.
+
+London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+<img src="C:\Users\student.SOC-ITLAB3-30\website\food.jpg" alt="Italian Trulli" width="700" height="200">
+    <p>Standing on the River Thames, London has been a major settlement for two millennia.</p>
+  </article>
+
+</section>
+
+<footer>
+  <p>&copy; 2023 My Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
